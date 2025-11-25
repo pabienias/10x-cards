@@ -1,0 +1,9 @@
+---
+globs: *.test.tsx
+alwaysApply: false
+---
+## Tests > React Unit Tests
+
+### Guidelines for testing React components
+- Use mocks for all things that are imported 
+- Avoid testing stylings - we only want to test structure and functionality of React components

@@ -1,0 +1,33 @@
+---
+alwaysApply: true
+---
+
+# AI rules for 10xCards
+
+General project description can be found in @high_level_desc.md
+Tech stack can be found in @tech-stack.md
+Product Requirements Document is located in @prd.md
+
+Whenever making any changes or suggestion please make sure that they are aligned with above files and they meet the project's requirements.
+
+## Tech Stack
+- Next.js 16
+- TypeScript 5
+- React 19
+- Tailwind 4
+- Shadcn/ui
+
+## Project structure
+
+Each time you introduce changes to the project please keep in mind the project structure that matches Next.js 16 framework.
+
+- @src/ - here is where all source code is placed
+- @src/app/ - here is where Next.js routing-based pages and layouts are located
+- @src/components/ - here we should place all static React components that will be reused in pages/layouts
+- @src/app/api/ - here is where we will store API endpoint files
+- @src/utils/ - here we should store all generic, reusable and stateles utilities, each one in separate directory
+- @public/ - public assets
+
+### General guidelines
+- New directories should always be named with lowercase using dash case e.g. `components/user-profile`
+- Always group code into modules and use `index.ts(x)` entrypoint files to export only those things that are supposed to be used outside

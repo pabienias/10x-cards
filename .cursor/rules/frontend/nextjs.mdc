@@ -1,0 +1,11 @@
+---
+globs: src/app/**/*.tsx
+alwaysApply: false
+---
+## Frontend > Next.js 16
+
+### General guidelines
+- Always use TypeScript with version matching the @package.json file
+- Leverage App Router with Server Components for improved performance
+- API endpoint files should be placed in @src/app/api/ directory
+- Whenever possible - use React Server Components unless component requires user interaction

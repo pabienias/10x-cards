@@ -1,0 +1,19 @@
+---
+globs: *.ts, *.tsx
+alwaysApply: false
+---
+
+## TypeScript guidelines
+
+### General rules
+- All TypeScript files should be named using dash case e.g. `calculate-result.ts`
+- Files that export React components should always be named using PascalCase e.g. `UserPicture.tsx`
+- Prefer interfaces over types to describe shapes/structures
+- Avoid enums - prefer literal types'
+- Use named functions using `const` assignments instead `function` declaration
+- When creating new TypeScript `.ts` file with only single export, then this filename should be adequate to that export's name
+- Never use default exports, always use named exports
+
+### Writing unit tests
+- Each source file should have corresponding unit tests file named exactly like source file but with `.test` suffix e.g. source file named `calculate-value.ts` would have `calculate-value.test.ts` unit test file
+- Whenever you create a TypeScript `.ts` file, please create a unit test file next to the source file

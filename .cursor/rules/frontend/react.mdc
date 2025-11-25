@@ -1,0 +1,19 @@
+---
+globs: *.tsx
+alwaysApply: false
+---
+
+## Frontend > React 19
+
+### General guidelines
+- Whenever you add or update React components, please use TypeScript with version pointed in @package.json file
+- Always create functional components with hooks, unless it is impossible, but in such a case ask whether we want to proceed with class based component
+- Use React.memo() for expensive components that tend to be rendered with same set of properties
+- Whenever possible use `useCallback` and `useMemo` hooks to improve performance in client components
+- Always use named exports for components, never use default export
+- Use Shadcn/ui and Tailwind CSS for styling React components
+- Priortize React Server Components whenever it is possible, use Client components ONLY if they have some user interaction and it is impossible to use Server Component
+
+### Unit tests for React components
+- Each React component should have it's own unit test file named `ComponentName.test.tsx` where `ComponentName` should reflect filename of React component's file
+- Whenever you create new React component file, please create unit test file and put it next to the source file
