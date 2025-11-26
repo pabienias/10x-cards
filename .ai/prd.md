@@ -95,8 +95,10 @@ Konsekwencje problemu
   - card_accepted (dla fiszek AI, również po edycji), card_rejected
 
 3.7 Model danych (MVP)
-- Card: id, user_id, front_text, back_text, origin (ai|manual), accepted_at, source_language, created_at, updated_at, srs_due_at, srs_interval_days, srs_ease_factor, srs_repetitions, srs_lapses.
+- Card: id, user_id, front_text, back_text, origin (ai|manual), created_at, updated_at, accepted_at, source_language.
+- Generation: id, user_id, model, generated_count, accepted_unedited_count, accepted_edited_count, sourc
 - ReviewLog: id, user_id, card_id, rating (again|hard|good|easy), reviewed_at, interval_days_before, interval_days_after, ease_before, ease_after.
+- LearningSession: id, user_id, card_id, srs_due_at, srs_interval_days, srs_ease_factor, srs_repetitions, srs_lapses.
 - TokenUsage: id, user_id, date_utc, tokens_used_total.
 - AnalyticsEvent: id, user_id, event_name, occurred_at, generation_request_id, properties_json.
 

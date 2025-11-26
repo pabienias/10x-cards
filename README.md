@@ -38,8 +38,8 @@ Details: `.ai/tech-stack.md`
 
 ## 4. Getting started locally
 Prerequisites:
-- Node.js v20.11.0 (see `.nvmrc`)
-- npm, pnpm, or yarn
+- Node.js v22.16.0 (see `.nvmrc`)
+- npm v10.9.2 (or pnpm/yarn)
 
 Recommended:
 ```bash
